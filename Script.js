@@ -134,7 +134,8 @@ bestBurger();
 
 //TODO Exercise 9
 Globe = "Earth";
-
 function GlobalStuff() {
-
+    function localstuff() {
+        let Planet = "Mars";
+    }
 };
