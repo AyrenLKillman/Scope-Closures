@@ -95,6 +95,7 @@ console.groupEnd();
 
 console.group("Exercise 6");
 console.log("this causes an error via 'Ventor is not defined'. AKA dont console.log a variable that is below the console.log.")
+console.groupEnd();
 
 //TODO Exercise 7
 function setupCounter() {
@@ -133,9 +134,17 @@ let bestBurger = chesbreuger();
 bestBurger();
 
 //TODO Exercise 9
-Globe = "Earth";
+Globe = 21;
 function GlobalStuff() {
-    function localstuff() {
-        let Planet = "Mars";
+    Planet = 2;
+    return function () {
+
+        Globe = Globe + Planet;
+        console.group("Exercise 9");
+        console.log(Globe);
+        console.groupEnd();
     }
 };
+
+GlobalStuff()();
+//* i dont think i did exercise 9 correctly, but thats probably due to me being bad at reading
